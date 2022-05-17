@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{% block title %}{% endblock %}</title>
+	<link rel="icon" href="https://lh3.googleusercontent.com/11lzuiGZ0bJfEMDb8_3fcbdgawtyMnY28vJzBJ7DKaidxzAVSwcz0SCkVJKErDpincKtj70XGH6MHVvnYOQ67S2hirdWeWvYO1wpY6tZsh0xEY0LdNTYzYJD2vBCElVE-rjhmNaF38Hps4Pc4muMqQniEc9cpKTzTxG6gEmFR4FS-do37-IDQB8C_w5k-uj-rzp83kmXokvoR5zBZqEcE7X_8ubGh2DNvUtuLXE_La6iJeQAUJe-9XyDgz3GhKdbm_jRjCbNM6TE1ZmKiWj-b9n3EOvAxYG_VS5-oOciXApiWZOb2nwh2DDzBCDwD-t_nf1w2G2L7DSxWlG3m3vkteDyA7LwpYprnXGpI-Z6KzNwqtQN2lki47sxPlCjDFB5Twb72FCok9YdHfOlOKI2w3wPqPg1cGvBfqiFAJXDZvBtlFJXCz40913jcoDgP_HG68ieXwIa4lD5AAhr2NM1Bo0qdHeLwuz2dpheVu5PTCC56cXvrSnbw38JaxdAI0J7Ake1H3ResvoS3R_t8IxNxGvpqLYqvfSkiEnj88JcPDC7tJYaDoVRki0t3hwN3lIz2TwOmzH8Guo6_6gjHVU0SeE1FpYOqO7r2Og5sZOeh4LObN_XpCEKlrhvblkxuxLsoAaJla-unvoOZbohqOKuHPbiiWYktAKE6kCJ1MukRpxOqdHlvMk_J_nRAAS6qwBTXlcjX_claL-gxQ0wWzrZyLo_i8Wabhr5z-haWwqnqVj8JJ17Pw64Uk_m2EYtqg=s475-no?authuser=0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+
+	<ul class="nav justify-content-end">
+	  <li class="nav-item">
+	    <a class="nav-link text-dark" href="/"><b>INICIO</b></a>
+	  </li>
+	  <li class="nav-item">
+	    <a class="nav-link text-dark" href="/comando"><b>LENGUAJES DE PROGRAMACIÓN</b></a>
+	  </li>
+	</ul>
+
+	<div class="container p-4">
+		{% block content %}
+		{% endblock %}
+	</div>
+
+</body>
+</html>
